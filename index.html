@@ -6,17 +6,18 @@
     <title>B10-Assignment-03</title>
     <!-- daisyUI from CDN link here -->
      
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 <!-- favicon link here -->
-<link rel="shortcut icon" href="https://img.icons8.com/?size=50&id=QWY6uhBxcr1I&format=png" type="image/x-icon">
+<link rel="shortcut icon" href="https://img.icons8.com/?size=80&id=6K9XaVNmlQAX&format=png" type="image/x-icon">
 <!-- tailwind css link here -->
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- tailwind css customize here -->
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- google font Manrope link here -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" class="text-white https://fonts.googleapis.com">
+<link rel="preconnect" class="text-white https://fonts.gstatic.com" crossorigin>
+<link class="text-white https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <!-- font awesome link here -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- css here -->
@@ -25,6 +26,7 @@
         font-family: "Manrope", sans-serif;
 }
  </style>
+ <!-- customize css codding here  -->
 <script>
     tailwind.config = {
       theme: {
@@ -47,7 +49,7 @@
   </script>
 
 </head>
-<body class=".manrope-google-font background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);">
+<body class="manrope-google-font background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);">
     <header>
         <!-- nav-bar start codding here -->
         <nav>
@@ -126,23 +128,26 @@
         
         <div class="hero bg-base-200 min-h-screen">
                   
-          <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="hero-content  flex-col lg:flex-row-reverse">
+            <!-- img here  -->
             
-            <img
+            <div class="">
+              <img
               src="./imges/Rectangle.png"
-              class="max-w-sm rounded-lg shadow-2xl" />
+              class="" />
+            </div>
               <!-- text section -->
             <div class="">
-              <img class="lg:-ml-14  w-24  " src="./imges/Vector.png" alt="">
-              <div class=" ">
-                <button class="text-base font-semibold text-black p-2 bg-white rounded-full mb-2 mt-6 "><i class="fa-solid fa-arrow-right"></i> About Us </button>
+              <img class="hidden lg:block w-24  lg:-ml-14   " src="./imges/Vector.png" alt="">
+              <div class="text-center lg:text-left ">
+                <button class=" text-base font-semibold text-black p-2 bg-white rounded-full mb-2 mt-6 "><i class="fa-solid fa-arrow-right"></i> About Us </button>
               </div>
-              <h1 class="text-5xl lg:font-bold  items-center">We design thoughtful, liveable spaces</h1>
-              <p class="py-6 text-gray-500">
+              <h1 class="text-center lg:text-left  font-semibold lg:font-bold  text-2xl  lg:text-5xl  ">We design thoughtful, <br> liveable spaces</h1>
+              <p class="text-center lg:text-left py-6 text-gray-500 ">
                 Ombré Robina embodies the natural beauty of its coastal setting with the convenient lifestyle of a masterplanned city suburb, blending the best of both worlds in a high-demand market.
               </p>
               <!-- first box -->
-              <div class="flex items-center space-x-5 bg-slate-50 rounded-2xl p-6">
+              <div class=" flex items-center space-x-5 bg-slate-50 rounded-2xl p-6">
                   <img src="./imges/commercial.png" alt="">
                   <div>
                   <h3 class="text-2xl font-extrabold">Commercial</h3>
@@ -150,7 +155,7 @@
                 </div>
                 </div>
                 <!-- second box -->
-                <div class="flex space-x-5 bg-slate-50 rounded-2xl p-6 mt-6">
+                <div class=" flex space-x-5 bg-slate-50 rounded-2xl p-6 mt-6">
                 <div>
                   <img src="./imges/commercial.png" alt="">
                 </div>
@@ -169,8 +174,8 @@
           <!-- text section -->
           <div class="text-center ">
             <button class="text-base font-semibold text-black px-4 py-2 bg-white rounded-full mb-2 "><i class="fa-solid fa-arrow-right"></i>How we works </button>
-            <h1 class="text-4xl font-bold mt-6">Our Works Process</h1>
-            <p class="text-gray-500  mt-6">Over the last two decades, Global Health Initiatives have contributed to enormous <br> progress in protecting lives and improving the health of people globally</p>
+            <h1 class="text-4xl font-semibold lg:font-bold my-3 lg:my-6">Our Works Process</h1>
+            <p class="text-gray-500 text-center">Over the last two decades, Global Health Initiatives have contributed to enormous <br> progress in protecting health of people globally</p>
           </div>
           <!-- card section here start -->
           <div class="lg:flex space-y-5 lg:space-x-6 py-8 w-3/4 m-auto">
@@ -211,44 +216,61 @@
          <!-- Let’s Discuss Next Project Section Codding start here  -->
           <section class="my-6">
             <div
-            class="hero min-h-screen"
+            class="hero min-h-screen bg-no-repeat bg-cover"
             style="background-image: url(.//imges/bg.jpg);">
             
             <div class="hero-overlay bg-opacity-20">
               <!-- text area section here start  -->
-              <div class="mt-24 text-center">
+              <div class="mt-10 lg:mt-24 text-center">
                 <button class="text-base font-semibold bg-button-2-bg py-1 px-4 rounded-full"><i class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
-                <h1 class="text-4xl font-bold my-6">Let’s Discuss Next Project</h1>
+                <h1 class="text-2xl lg:text-4xl font-bold my-4 lg:my-6">Let’s Discuss Next Project</h1>
                 <p class="text-gray-500 text-center">Country farmhouse design is  choice that celebrates the beauty handcrafted. <br> It’s about embracing the imperfections  that  make a <br> home feel lived-in and loved.</p>
               </div>
               <!-- input type section start here  -->
               <div class=" text-center my-6">
-            <div>
-              <input type="text" placeholder="First Name*" class="rounded-full  input input-bordered w-full max-w-xs" />
-              <input type="text" placeholder="Last Name*" class="rounded-full  input input-bordered w-full max-w-xs ml-6" />
+            <div class="">
+              <input type="text" placeholder="First Name*" class="rounded-full  input input-bordered " />
+              <input type="text" placeholder="Last Name*" class="rounded-full  input input-bordered  lg:ml-6 mt-5 lg:mt-0" />
             </div> 
             <div>
-              <input type="text" placeholder="Phone Number*" class="rounded-full  mt-6 input input-bordered w-full max-w-xs" />
-              <input type="text" placeholder="Email Number*" class="rounded-full  input input-bordered w-full max-w-xs ml-6" />
+              <input type="text" placeholder="Phone Number*" class="rounded-full  mt-6 input input-bordered " />
+              <input type="text" placeholder="Email Number*" class="rounded-full  input input-bordered lg:ml-6 my-5 lg:my-0" />
             </div>
        
             </div>
             <div class="text-center ">
-              <textarea class="textarea textarea-bordered w-1/3 h-60 rounded-lg" placeholder="Write your message here"></textarea> <br>
+              <textarea class="textarea textarea-bordered lg:w-4/12 h-60 rounded-lg" placeholder="Write your message here"></textarea> <br>
               <button class="btn btn-block w-1/3 my-7 bg-button-bg-0 rounded-full border-none mb-16">Send Mail <i class="fa-solid rotate-45 fa-arrow-up  w-3 h-3 "></i></button>
             </div>
 
             </div>
-            
-             
-            
- 
-           
+
           </div>
           </section>
 
     </main>
-    <footer>
+    <footer class="bg-footer-bg py-28 text-center">
+      <!-- footer text section here  -->
+      <div class="text-center">
+        <a class="btn btn-ghost text-4xl font-bold text-white"><i class="fa-solid  rounded-full text-2xl rotate-45 fa-arrow-up text-white"></i> Rinterio</a>
+        <p class="text-gray-500 py-5">
+          we’re setting the stage for a deeper exploration into the heart of   country <br> farmhouse design—a  h about creating a 
+        </p>
+      </div>
+      <!-- footer link section here  -->
+      <div class=" space-y-10 lg:space-y-0 lg:flex justify-center mt-7 gap-20 ">
+        <div><a class="text-white ">Home</a></div>
+        <div><a class="text-white ">Services</a></div>
+        <div><a class="text-white ">Portfolio</a></div>
+        <div><a class="text-white ">Blogs</a></div>
+        <div><a class="text-white ">Contact Us</a></div>
+       
+        
+      </div>
+      <!-- footer button here  -->
+      <div class="text-center mt-10">
+        <button class="bg-button-bg-0 py-2 px-4 rounded-3xl">Book Consult <i class="fa-solid fa-arrow-up rotate-45"></i></button>
+      </div>
 
     </footer>
     
